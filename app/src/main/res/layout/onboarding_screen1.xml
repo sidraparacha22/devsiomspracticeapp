@@ -43,7 +43,7 @@
         android:textColor="@color/theme_dark_green"
         android:fontFamily="@font/poppins_semibold"
         android:id="@+id/welcome"
-        android:layout_marginTop="@dimen/_25sdp"/>
+        android:layout_marginTop="@dimen/_28sdp"/>
 
     <TextView
         android:id="@+id/subtxt"
