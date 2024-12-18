@@ -2,4 +2,7 @@
     <string name="app_name">Practice App</string>
     <string name="go">GO</string>
     <string name="green">GREEN</string>
+    <string name="we_re_glad_that_you_nare_here">We\'re glad that you\nare here</string>
+    <string name="welcome">Welcome</string>
+    <string name="lets_get_started">Lets get started</string>
 </resources>

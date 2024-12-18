@@ -85,7 +85,7 @@
         android:fontFamily="@font/poppins_medium"
         android:gravity="center"
         android:paddingHorizontal="@dimen/_8sdp"
-        android:paddingVertical="@dimen/_7sdp"
+        android:paddingVertical="@dimen/_8sdp"
         android:text="Create Account"
         android:textColor="@color/white"
         android:textSize="@dimen/_15ssp"
