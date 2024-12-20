@@ -6,4 +6,6 @@
     <color name="theme_dark_green">#2D6936</color>
     <color name="theme_light_grey">#F5F5F5</color>
     <color name="theme_light_green">#E7E8E3</color>
+    <color name="grey">#515151</color>
+    <color name="light_grey">#F2F2F2</color>
 </resources>
