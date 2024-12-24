@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/_16sdp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/_16sdp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/_55sdp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perform Calculations"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/guideline3"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="@dimen/_22ssp"
+        android:id="@+id/mainTxt"/>
+
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/mainTxt"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:hint="Enter number"
+        android:inputType="number"
+        android:fontFamily="@font/roboto"
+        android:id="@+id/firstNum"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/firstNum"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:hint="Enter number"
+        android:inputType="number"
+        android:fontFamily="@font/roboto"
+        android:id="@+id/SecNum"/>
+
+    <Button
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:text="+"
+        android:textSize="@dimen/_23ssp"
+        android:fontFamily="@font/roboto_bold"
+        android:id="@+id/add"
+        app:layout_constraintEnd_toStartOf="@id/sub"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/SecNum"
+        android:layout_marginTop="@dimen/_15sdp"/>
+
+    <Button
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:text="-"
+        android:textSize="@dimen/_25ssp"
+        android:fontFamily="@font/roboto_bold"
+        android:id="@+id/sub"
+        app:layout_constraintTop_toBottomOf="@id/SecNum"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toEndOf="@id/add"
+        android:layout_marginTop="@dimen/_15sdp"/>
+
+
+    <Button
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:text="x"
+        android:textSize="@dimen/_23ssp"
+        android:fontFamily="@font/roboto_bold"
+        android:id="@+id/mul"
+        app:layout_constraintEnd_toStartOf="@id/div"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/add"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <Button
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:text="/"
+        android:textSize="@dimen/_23ssp"
+        android:fontFamily="@font/roboto_bold"
+        android:id="@+id/div"
+        app:layout_constraintTop_toBottomOf="@id/sub"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toEndOf="@id/mul"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Answer"
+             android:gravity="center"
+             app:layout_constraintTop_toBottomOf="@id/div"
+             android:layout_marginTop="@dimen/_25sdp"
+             android:textColor="@color/black"
+             android:fontFamily="@font/roboto_bold"
+             android:textSize="@dimen/_20ssp"
+             android:id="@+id/answer"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
